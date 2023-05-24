@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lux's Minecraft Hosting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .plan {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0 10px;
+      max-width: 300px;
+      text-align: center;
+    }
+    
+    .plan h2 {
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+    
+    .plan p {
+      font-size: 16px;
+      color: #777777;
+      margin-bottom: 20px;
+    }
+    
+    .plan .price {
+      font-size: 32px;
+      color: #f51111;
+      margin-bottom: 20px;
+    }
+    
+    .plan .button {
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+  </style>
+  <script>
+    // Redirect function
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+
+    // Add event listeners to the select buttons
+    document.addEventListener("DOMContentLoaded", function() {
+      var selectButtons = document.getElementsByClassName("button");
+
+      for (var i = 0; i < selectButtons.length; i++) {
+        selectButtons[i].addEventListener("click", function() {
+          redirectTo("https://www.patreon.com/LuxsMcServerHosting"); // Replace "https://example.com" with your desired redirect URL
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Lux's Minecraft Hosting Pricing</h1>
+  <div class="pricing-container">
+    <div class="plan">
+      <h2>Basic</h2>
+      <p>For small servers 15 players my tags will be in the desc example your server desc Hosted By Lux</p>
+      <p class="price">$4.99/month</p>
+      <a href="#" class="button">Select</a>
+    </div>
+    <div class="plan">
+      <h2>Standard</h2>
+      <p>For medium-sized servers 39 players and a domain without my tags</p>
+      <p class="price">$14.99/month</p>
+      <a href="#" class="button">Select</a>
+    </div>
+    <div class="plan">
+      <h2>Advanced</h2>
+      <p>For large servers 120 players and a domain No tags</p>
+      <p class="price">$19.99/month</p>
+      <a href="#" class="button">Select</a>
+    </div>
+  </div>
+</body>
+
+</html>
